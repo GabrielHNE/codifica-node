@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Codifica</title>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Empresa Júnior de Computação">
+    <link 
+      rel="stylesheet" 
+      href="/css/main.css">
+
+    <link 
+      rel="stylesheet"
+      href="/css/bootstrap.min.css">
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700|Press+Start+2P|Raleway:400,500|Roboto+Slab&display=swap"
+      rel="stylesheet">
+    
+    <link 
+      rel="stylesheet"
+      href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/icomoon.css">
+
+    <!-- scripts -->
+    <script src="/js/jquery-3.4.1.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/d48b9dcbe5.js"></script> -->
+    <!-- <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script> -->
+
+    <!-- <script 
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script> -->
+
+    <script src="/js/typed.js"></script>
+    <script src="/js/particles.js"></script>
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <div id="loadingdiv" style="height: 100vh; padding-top: 40vh;">
+      <img id="loading" src="/material/logo2.png">
+    </div>
+
+    <div id="fullpage" style="display: none;">
+      
+      <div style=" background-image: linear-gradient(to bottom, transparent 20% ,rgb(23,37,52));">
+
+        <div class="fullsection">
+          <div id="Header1" class="headert">
+            <div id="particles-js">
+              <a href="#" class="loginBtn">Login</a>
+              <div id="headline" class="slide-bottom">
+                <div style="text-align: center; display: grid">
+                  <div>
+                    <img src="/material/logo2.png" class="logoImg">
+                  </div>
+                  <div>
+                    <img src="/material/logo1.png" class="logoText refl">
+                  </div>
+                </div>
+              </div>
+
+              <div class="text container">
+                <div class="row">
+                  <div class="col" style="width: 50%; text-align:center; padding-left: 0px;">
+                    <span id="typed"></span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="twothirdsection" name="pg2">
+          <div class="page2">
+            <div style="display:flex; height: 100%;">
+              <div class="col-lg-8">
+                <div class="speechText" style="padding: 2vh;">
+                  Nossa missão é oferecer uma experiência sem compromissos, de qualidade, do começo ao fim, ao nosso
+                  cliente!
+                </div>
+
+                <!-- slider com apresentação do time -->
+                <div style="margin-top: 1vh;">
+                  <div style="font-family: 'Chivo', sans-serif; text-align: center; font-size: 1.3vw; color: white;" class="discoverText">
+                    Conheça nossa equipe!
+                  </div>
+                  <div class="team_cardImage">
+
+                    <div class="setinha" onclick="arrowTras();">
+                      <i class="fas fa-arrow-alt-circle-left"></i>
+                    </div>
+
+                      <div class="team_cards">
+                        <article id="cardtm1" class="team_card team_card--1">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('http://www.codificajr.com.br/assets/img/membros/guilherme-mello.jpg');">
+                            </div>
+                          </a>
+                          
+                          <div class="team_card__info" style="display: table">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Diretor Presidente</span>
+                              <h3 class="team_card__title">Guilherme <br>Mello</h3>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article id="cardtm2" class="team_card team_card--1">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('http://www.codificajr.com.br/assets/img/membros/matheus-carnelutt.jpg');">
+                            </div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Diretor de Marketing</span>
+                              <h3 class="team_card__title">Matheus<br>Carnelutt</h3>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article id="cardtm3" class="team_card team_card--1">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('http://www.codificajr.com.br/assets/img/membros/wallacy-sebastian.jpg');">
+                            </div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Diretor Financeiro</span>
+                              <h3 class="team_card__title">Wallacy<br>Sebastian</h3>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article id="cardtm4" class="team_card team_card--1">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('http://www.codificajr.com.br/assets/img/membros/renan-koga.jpg');">
+                            </div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Gerente de Front-End</span>
+                              <h3 class="team_card__title">Renan <br>Koga</h3>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article id="cardtm5" class="team_card team_card--1 hideDiv">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('https://pbs.twimg.com/media/D8aXdDEUYAAdocO.png');"></div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Diretor de Artes</span>
+                              <h3 class="team_card__title">4444444444444<br>Jhin</h3>
+                            </div>
+
+                          </div>
+                        </article>
+
+                        <article id="cardtm6" class="team_card team_card--1 hideDiv">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('https://scontent.fbfh12-1.fna.fbcdn.net/v/t1.0-9/20429575_1340965062683395_8355695278459688439_n.jpg?_nc_cat=110&_nc_oc=AQnKDqDmyC3-udmxTDY23Mk2GyuS0OdM83eG0R1P-FAm2_Eu_pB7_tvVaYwLFrnZgu8&_nc_ht=scontent.fbfh12-1.fna&oh=c49950727a91059d34899cc1bd5a60c5&oe=5DBA1E74');">
+                            </div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Rei delas</span>
+                              <h3 class="team_card__title">Vinicius<br>Luciano</h3>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article id="cardtm7" class="team_card team_card--1 hideDiv">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('https://i.pinimg.com/originals/c6/2e/36/c62e36418030a6fea4dd6d3b0d39e686.png');">
+                            </div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Gerente de x1</span>
+                              <h3 class="team_card__title">Yasuo<br>0/todos</h3>
+                            </div>
+                          </div>
+                        </article>
+
+
+                        <article id="cardtm8" class="team_card team_card--1 hideDiv">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('https://scontent.fbfh12-1.fna.fbcdn.net/v/t1.0-9/37568669_2193673153993308_6529588760919670784_n.jpg?_nc_cat=102&_nc_oc=AQlE9ANiSNaIOhV8smoo584jpHAIP-KdTA4HBEtmLdJxtr8foY0Sb3c6HnQDAFf-SL8&_nc_ht=scontent.fbfh12-1.fna&oh=74a58c1e2b2a47d062acf4a52356db70&oe=5D80E2C3');">
+                            </div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Diretor de Diretor</span>
+                              <h3 class="team_card__title">Vernicius<br>Vidade</h3>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article id="cardtm9" class="team_card team_card--1 hideDiv">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('https://i1.rgstatic.net/ii/profile.image/272306199068681-1441934265601_Q512/Jacques_Brancher.jpg');">
+                            </div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Gerente do Comunismo</span>
+                              <h3 class="team_card__title">Jacques<br>LOKO MAGRÃO</h3>
+                            </div>
+                          </div>
+                        </article>
+
+                        <article id="cardtm10" class="team_card team_card--1 hideDiv">
+                          <div class="team_card__img"></div>
+                          <a class="team_card_link">
+                            <div class="team_card__img--hover"
+                              style="background-image: url('https://st3.depositphotos.com/11352464/14959/i/1600/depositphotos_149596134-stock-photo-lasagne-with-ham-and-cheese.jpg');">
+                            </div>
+                          </a>
+                          <div class="team_card__info">
+                            <div style="display: table-cell; vertical-align: middle;">
+                              <span class="team_card__category"> Carro chefe da UEL</span>
+                              <h3 class="team_card__title">Lasanha<br>Bolonhesa</h3>
+                            </div>
+                          </div>
+                        </article>
+
+
+                      </div>
+
+                    <div class="setinha" style="margin-left: -25px" onclick="arrowFrente();">
+                      <i class="fas fa-arrow-alt-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 noScroll">
+
+                <ul class="timeline">
+                  <li class="event" data-date="2019">
+                    <h3>
+                      2o Geracao Codifica
+                    </h3>
+                    <p>
+                      Com a papelada e inumeras parceiras ja feita, neste ano começamos a trabalhar em grandes projetos
+                    </p>
+                  </li>
+                  <li class="event" data-date="2019">
+                    <h3>
+                      Entrada de Trainees
+                    </h3>
+                    <p>
+                      Com a passagem de mais um ano, a Codifica anuncia orgulhosamente seus mais novos trainees!
+                    </p>
+                  </li>
+                  <li class="event" data-date="2018">
+                    <h3>
+                      1o Geracao Codifica
+                    </h3>
+                    <p>Com o início da papelada, aqui surge a primeira geração da codifica</p>
+                  </li>
+                  <li class="event" data-date="2017">
+                    <h3>
+                      Nascia o que viria a ser Codifica.
+                    </h3>
+                    <p>
+                      Em Outubro de 2017 era criado a Empresa Júnior de Computação!
+                    </p>
+                  </li>
+                </ul>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- seção de informações da empresa-->
+      <div class="thirdsection">
+        <div class="page3">
+          <div class="barStat row">
+
+            <div class="slot col-lg-4">
+              <i class="fas fa-users"></i>
+              <div class="statText counter">
+                +50 desenvolvedores
+              </div>
+              <div class="statTextMini">
+                já passaram pela história da empresa
+              </div>
+            </div>
+
+            <div class="slot col-lg-4">
+              <i class="fas fa-file-code"></i>
+              <div class="statText counter">
+                +150.000 linhas de código
+              </div>
+              <div class="statTextMini">
+                codificadas
+              </div>
+            </div>
+
+            <div class="slot col-lg-4">
+              <i class="fas fa-user-circle"></i>
+              <div class="statText counter">
+                +120 clientes
+              </div>
+              <div class="statTextMini">
+                atendidos com excelência
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="portfolio-section">
+        <div id="pg4" class="page4">
+          <div class="portfolio">
+            <div class="container-fluid">
+              <div class="row" style="padding: 15px;">
+
+                <div class="col-lg-6 equiBox" style="display: table">
+                  <div class="align-middle" style="display: table-cell">
+                    <div class="titleProject textRight">
+                      <div>
+                        SISTEMAS DESKTOP
+                      </div>
+                      <div class="titleIcon">
+                        <i class="fas fa-server"></i>
+                      </div>
+                    </div>
+
+                    <div class="boxText">
+                      <div class="lowerText">
+                        Desenvolvemos sistemas Desktop como exemplo o nosso totem do RU. Que em parceria com a ATI/UEL
+                        proporcionou a compra de créditos de forma mais prática e rápida.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                  <figure>
+                    <div class="media"
+                      style="background-image:linear-gradient(rgba(2, 70, 255, 0.5), rgba(35,35,35,.5)), url(https://scontent.fldb2-1.fna.fbcdn.net/v/t1.0-9/45022159_556375271460014_5834976606514315264_n.jpg?_nc_cat=108&_nc_oc=AQkStzXxtbfc506o3RIxHvPFyToKJ0pkmorZqHwhmzuvSTq_poCsEyNPWPh1FRstduA&_nc_ht=scontent.fldb2-1.fna&oh=19f7c928af1d21cd4eef4207bdfa8f71&oe=5DB9E50E);">
+                    </div>
+                    <figcaption><svg viewBox="0 0 200 200" version="1.1" preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg" class="port">
+                        <defs>
+                          <mask id="mask" x="0" y="0" width="100%" height="100%">
+                            <rect id="alpha" x="0" y="0" width="100%" height="80%"></rect>
+                            <text class="title" dx="50%" dy="2.5em">PROJETO</text>
+                            <text class="title" dx="50%" dy="3.5em">TOTEM</text>
+                            <text class="title" dx="50%" dy="4.5em">RU</text>
+                          </mask>
+                        </defs>
+                        <rect id="base" style="-webkit-mask: url(#mask); mask: url(#mask); fill: white;" x="0" y="0"
+                          width="100%" height="100%"></rect>
+                      </svg>
+                    </figcaption><a href="#"></a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row" style="padding: 15px">
+
+                <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                  <figure>
+                    <div class="media"
+                      style="background-image:linear-gradient(rgba(2, 70, 255, 0.5), rgba(35,35,35,.5)), url(https://scontent.fldb2-1.fna.fbcdn.net/v/t1.0-9/43745664_548965172201024_3259010871988322304_o.jpg?_nc_cat=111&_nc_oc=AQk37PmORPOv7_wtTdJFgyhpbUqqlTRylHQ8Vr-I25YLWWzZzXK0UjbHSK6GEY9JgvY&_nc_ht=scontent.fldb2-1.fna&oh=8c1fe80d9af9c2b0bb84c33a628c1149&oe=5DB68F32);">
+                    </div>
+                    <figcaption><svg viewBox="0 0 200 200" version="1.1" preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg" class="port">
+                        <defs>
+                          <mask id="mask2" x="0" y="0" width="100%" height="100%">
+                            <rect id="alpha" x="0" y="0" width="100%" height="70%"></rect>
+                            <text class="title" dx="50%" dy="2.5em">SITE</text>
+                            <text class="title" dx="50%" dy="3.5em">CODIFICA</text>
+                          </mask>
+                        </defs>
+                        <rect id="base" style="-webkit-mask: url(#mask2); mask: url(#mask2); fill: white;" x="0" y="0"
+                          width="100%" height="100%"></rect>
+                      </svg>
+                    </figcaption><a href="#"></a>
+                  </figure>
+                </div>
+
+                <div class="col-lg-6 equiBox" style="display: table">
+                  <div class="align-middle" style="display: table-cell">
+                    <div class="titleProject textLeft">
+                      <div>
+                        SITES INSTITUCIONAIS
+                      </div>
+                      <div class="titleIcon">
+                        <i class="fas fa-building"></i>
+                      </div>
+                    </div>
+
+                    <div class="boxText">
+                      <div class="lowerText" style="text-align: left">
+                        Produção de sites institucioanis de alta qualidade, sendo nossos principais trabalhos, nosso
+                        próprio site e o de nossa parceria, a empresa júnior de direito, LEX!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row" style="padding: 15px;">
+
+                <div class="col-lg-6 equiBox" style="display: table">
+                  <div class="align-middle" style="display: table-cell">
+                    <div class="titleProject textRight">
+                      <div>
+                        SISTEMAS WEB
+                      </div>
+                      <div class="titleIcon">
+                        <i class="fas fa-project-diagram"></i>
+                      </div>
+                    </div>
+
+                    <div class="boxText">
+                      <div class="lowerText">
+                        Desenvolvimento de sistemas WEB, seja ecommerce ou gerenciamento para o seu negócio. Nosso
+                        principal produto é o de gerenciamento comercial, como o projeto para a Incubadora da UEL, a
+                        AINTEC, que permite gerenciar eficientemente as salas de reunião disponíveis para uso.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                  <figure>
+                    <div class="media"
+                      style="background-image:linear-gradient(rgba(2, 70, 255, 0.5), rgba(35,35,35,.5)), url(https://scontent.fldb2-2.fna.fbcdn.net/v/t31.0-8/22426320_362104287553781_419941821845977925_o.png?_nc_cat=105&_nc_oc=AQmmWQ4-DEYAm_xD6kfkb2XCBsEFCHabcUQlE0YI98TtYSxbwiJHxRRPfwRBw3rkqxg&_nc_ht=scontent.fldb2-2.fna&oh=9d36cc65d6ef75a82b31587413f3e4c1&oe=5D866BA4);">
+                    </div>
+                    <figcaption><svg viewBox="0 0 200 200" version="1.1" preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg" class="port">
+                        <defs>
+                          <mask id="mask3" x="0" y="0" width="100%" height="100%">
+                            <rect id="alpha" x="0" y="0" width="100%" height="80%"></rect>
+                            <text class="title" dx="50%" dy="2.5em">GERÊNCIA</text>
+                            <text class="title" dx="50%" dy="3.5em">DE SALAS</text>
+                            <text class="title" dx="50%" dy="4.5em">AINTEC</text>
+                          </mask>
+                        </defs>
+                        <rect id="base" style="-webkit-mask: url(#mask); mask: url(#mask3); fill: white;" x="0" y="0"
+                          width="100%" height="100%"></rect>
+                      </svg>
+                    </figcaption><a href="#"></a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- This fullsection is realted to the form section -->
+      <div class="fullsection">
+        <style scoped>
+          *,
+          *:before,
+          *:after {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+
+          .enclosure {
+            background: rgba(20, 29, 37, 0.5);
+            font-size: 12px;
+          }
+
+          .enclosure,
+          button,
+          input,
+          textarea {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+          }
+
+          .background {
+            display: flex;
+            min-height: 100vh;
+          }
+
+          .f_container {
+            flex: 0 1 50vw;
+            margin: auto;
+            padding: 10px;
+          }
+
+          .screen {
+            position: relative;
+            background: #3e3e3e;
+            border-radius: 15px;
+          }
+
+          .screen:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 20px;
+            right: 20px;
+            bottom: 0;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+            z-index: -1;
+          }
+
+          .screen-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: #4d4d4f;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+          }
+
+          .screen-header-left {
+            margin-right: auto;
+          }
+
+          .screen-header-button {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 3px;
+            border-radius: 8px;
+            background: white;
+          }
+
+          .screen-header-button.f_close {
+            background: #ed1c6f;
+          }
+
+          .screen-header-button.f_maximize {
+            background: #e8e925;
+          }
+
+          .screen-header-button.f_minimize {
+            background: #74c54f;
+          }
+
+          .screen-header-right {
+            display: flex;
+          }
+
+          .screen-header-ellipsis {
+            width: 3px;
+            height: 3px;
+            margin-left: 2px;
+            border-radius: 8px;
+            background: #999;
+          }
+
+          .screen-body {
+            display: flex;
+          }
+
+          .screen-body-item {
+            flex: 1;
+            padding: 50px;
+          }
+
+          .screen-body-item.left {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .app-title {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            color: #17a2b8;
+            font-size: 26px;
+          }
+
+          .app-title:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 25px;
+            height: 4px;
+            background: #6610f2;
+          }
+
+          .app-contact {
+            margin-top: auto;
+            font-size: 8px;
+            color: #888;
+          }
+
+          .app-form-group {
+            margin-bottom: 15px;
+          }
+
+          .app-form-group.message {
+            margin-top: 10px;
+          }
+
+          .app-form-group.buttons {
+            margin-bottom: 0;
+            text-align: right;
+          }
+
+          .app-form-control {
+            width: 100%;
+            padding: 10px 0;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #666;
+            color: #ddd;
+            font-size: 14px;
+            text-transform: uppercase;
+            outline: none;
+            transition: border-color .2s;
+          }
+
+          .app-form-control::placeholder {
+            color: #666;
+          }
+
+          .app-form-control:focus {
+            border-bottom-color: #ddd;
+          }
+
+          .app-form-button {
+            background: none;
+            border: none;
+            color: #007bff;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+          }
+
+          .app-form-button:hover {
+            color: #6610f2;
+          }
+
+
+          @media screen and (max-width: 1200px) {
+            .screen-body {
+              flex-direction: column;
+            }
+
+            .screen-body-item.left {
+              margin-bottom: 30px;
+            }
+
+            .app-title {
+              flex-direction: column;
+            }
+
+            .app-title span {
+              margin-right: 12px;
+            }
+
+            .app-title:after {
+              display: none;
+            }
+          }
+
+          @media screen and (max-width: 1200px) {
+            .screen-body {
+              padding: 40px;
+            }
+
+            .screen-body-item {
+              padding: 0;
+            }
+          }
+        </style>
+
+        <!-- id="foundtheform" The form file - settled independent in the cod folder -->
+        <div class="enclosure">
+          <div class="background">
+            <div class="f_container">
+              <div class="screen">
+                <div class="screen-header">
+                  <div class="screen-header-left">
+                    <div class="screen-header-button f_close"></div>
+                    <div class="screen-header-button f_maximize"></div>
+                    <div class="screen-header-button f_minimize"></div>
+                  </div>
+                  <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                  </div>
+                </div>
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <span>ENTRE EM</span>
+                      <span>CONTATO</span>
+                    </div>
+                    <div class="app-contact">Contato : Departamento de Computação/UEL</div>
+                  </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="NOME">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="EMAIL">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="TELEFONE">
+                      </div>
+                      <div class="app-form-group message">
+                        <textarea rows="3" cols="21" class="app-form-control" placeholder="MENSAGEM"></textarea>
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button">CANCELAR</button>
+                        <button class="app-form-button">ENVIAR</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footersection" style="background:rgba(20, 29, 37, 0.5); display: block">
+        <div class="miniText" style="display: inline-block; text-align: center; color: white">
+          Codifica © 2019
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
